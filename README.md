@@ -1,16 +1,13 @@
-# what_counts
+# WhatCounts
 
 A simple app to keep track of what counts in your life.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Add and name counters using the + button. (You can delete them with the trash can buttons.)
 
-A few resources to get you started if this is your first Flutter project:
+Spin the counters to track what's important to you.
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+Switch to the Graphs tab to see and compare recent history.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Hit the "edit" pencil button for a graph to change a particular day's counters.
