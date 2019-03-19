@@ -31,7 +31,7 @@ class _GraphState extends State<Graph> {
   final Function _switchToCountersTabCallback;
   final Counters _counters = Counters();
 
-  final Map<int, List<int>> _barColors = {
+  final Map<int, List<int>> _barColors = { // lovingly handcrafted for contrast
     1: [500],
     2: [100, 900],
     3: [100, 500, 900],
