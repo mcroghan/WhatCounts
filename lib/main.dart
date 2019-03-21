@@ -20,18 +20,18 @@ class WhatCounts extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: Strings.appTitle,
-        debugShowCheckedModeBanner: false,
-        home: Home(),
-        theme: ThemeData(
-          primarySwatch: Hues.primarySwatch,
-          textTheme: TextTheme(
-            headline: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20.0
-            )
+      title: Strings.appTitle,
+      debugShowCheckedModeBanner: false,
+      home: Home(),
+      theme: ThemeData(
+        primarySwatch: Hues.primarySwatch,
+        textTheme: TextTheme(
+          headline: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20.0
           )
-        ),
+        )
+      ),
     );
   }
 }
@@ -152,11 +152,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           Column(
             children: <Widget>[
               Padding(
-                  padding: EdgeInsets.symmetric(vertical: 20.0),
-                  child: Text(
-                      Util.formatDateStringForHumans(_countersDateString),
-                      style: Theme.of(context).textTheme.headline
-                  )
+                padding: EdgeInsets.symmetric(vertical: 20.0),
+                child: Text(
+                  Util.formatDateStringForHumans(_countersDateString),
+                  style: Theme.of(context).textTheme.headline
+                )
               ),
               Expanded(
                 child: GridView.count(

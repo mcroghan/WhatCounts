@@ -41,28 +41,28 @@ class _CounterState extends State<Counter> {
     _setCounterState(App.localStorage.getInt(Util.buildCounterKey(_title, dateString: _dateString)) ?? 0);
 
     return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget> [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 10.0),
-                child: Text(_title, style: Theme.of(context).textTheme.headline)
-              ),
-              IconButton(
-                icon: Icon(Icons.delete),
-                onPressed: () => _deleteCounterCallback(context, _title)
-              )
-            ]
-          ),
-          NumberPicker.integer(
-            initialValue: _currentValue,
-            minValue: 0,
-            maxValue: Ints.maxCounterValue,
-            onChanged: (newValue) => _saveCounterState(newValue),
-          ),
-        ]
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget> [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0),
+              child: Text(_title, style: Theme.of(context).textTheme.headline)
+            ),
+            IconButton(
+              icon: Icon(Icons.delete),
+              onPressed: () => _deleteCounterCallback(context, _title)
+            )
+          ]
+        ),
+        NumberPicker.integer(
+          initialValue: _currentValue,
+          minValue: 0,
+          maxValue: Ints.maxCounterValue,
+          onChanged: (newValue) => _saveCounterState(newValue),
+        ),
+      ]
     );
   }
 }

@@ -75,16 +75,16 @@ class _GraphState extends State<Graph> {
     return Column(
       children: <Widget>[
         Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget> [
-              Text(Util.formatDateStringForHumans(_title),
-                  style: Theme.of(context).textTheme.headline
-              ),
-              IconButton(
-                icon: Icon(Icons.edit),
-                onPressed: () => _switchToCountersTabCallback(context, _title),
-              )
-            ]
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget> [
+            Text(Util.formatDateStringForHumans(_title),
+                style: Theme.of(context).textTheme.headline
+            ),
+            IconButton(
+              icon: Icon(Icons.edit),
+              onPressed: () => _switchToCountersTabCallback(context, _title),
+            )
+          ]
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10),
@@ -96,8 +96,8 @@ class _GraphState extends State<Graph> {
               vertical: false,
               barRendererDecorator: new charts.BarLabelDecorator<String>(),
               domainAxis: new charts.OrdinalAxisSpec(
-                  showAxisLine: true,
-                  renderSpec: new charts.NoneRenderSpec()
+                showAxisLine: true,
+                renderSpec: new charts.NoneRenderSpec()
               ),
               primaryMeasureAxis: charts.NumericAxisSpec(
                 showAxisLine: true,
