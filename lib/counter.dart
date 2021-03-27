@@ -40,7 +40,7 @@ class _CounterState extends State<Counter> {
   Widget build(BuildContext context) {
     _setCounterState(App.localStorage.getInt(Util.buildCounterKey(_title, dateString: _dateString)) ?? 0);
 
-    return Column(
+    return SingleChildScrollView(child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Row(
@@ -63,6 +63,6 @@ class _CounterState extends State<Counter> {
           onChanged: (newValue) => _saveCounterState(newValue),
         ),
       ]
-    );
+    ));
   }
 }
